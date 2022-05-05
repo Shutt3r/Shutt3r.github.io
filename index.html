@@ -6,6 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Crimson+Text:600,600i,700i|Mada:400,500,700|Poppins:300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,72 +27,232 @@
 </head>
 
 <body>
+    <!------ HEADER ------>
+    <header class="home container-outer" id="home">
+        <div class="wrapper">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Shutt3r</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <nav>
+                <input type="checkbox" id="hamburger" name="hamburger" />
+                <label for="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#interests">Interests</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#socials">Socials</a>
-                </li>
-            </ul>
+                <ul>
+                    <li><a href="#home" aria-label="go to home section.">home</a></li>
+                    <li><a href="#about" aria-label="go to about section.">about</a></li>
+                    <li><a href="#skills-tools" aria-label="go to skills and tools section.">skills & tools</a></li>
+                    <li><a href="#work" aria-label="go to work section.">work</a></li>
+                    <li><a href="#contact" aria-label="go to contact section.">contact</a></li>
+                </ul>
+            </nav>
+
+
+            <h1><span>Hi, I'm Shutt3r</span>
+                <span class="container-flip">
+                    <span class="flip flip-writer">Software Engineer</span>
+                    <span class="flip flip-writer">Science Fiction Writer</span>
+                    <span class="flip flip-reader">Bibliophile</span>
+                    <span class="flip flip-optimist">Optimist</span>
+                    <span class="flip flip-baker">Vegan Baker</span>
+                    <span class="flip flip-cat">Animal Lover</span>
+                </span> <!-- /.container-flip-->
+            </h1>
+
+        </div> <!-- /.wrapper-->
+    </header>
+    <div class="angle angle1"></div>
+
+
+    <main>
+
+        <!------ ABOUT SECTION ------>
+
+        <section class="about" id="about">
+            <div class="wrapper">
+
+                <h2>About Me</h2>
+                <p>I am a junior full stack software engineer. </p>
+                <p>My interests include: writing fiction, cooking and baking vegan food, drawing, and reading. </p>
+            </div> <!-- /.wrapper -->
+
+        </section>
+        <div class="angle angle2"></div>
+
+
+        <!------ SKILLS & TOOLS SECTION ------>
+        <section class="skills-tools" id="skills-tools">
+            <div class="wrapper">
+                <h2 class="light">skills & tools</h2>
+                <p>The technologies I use to bring ideas to life are:</p>
+                <div class="container-icons">
+                    <ul>
+                        <li>Java</li>
+                        <li>Git</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Postgres</li>
+                        <li>Terraform</li>
+                        <li>Ansible</li>
+                    </ul>
+                </div> <!-- /.container-icons -->
+
+                <h4>Currently working on:</h4>
+                <p>Improving my skills in and understanding of design and development of responsive and accessible UI.
+                </p>
+            </div> <!-- /.wrapper -->
+        </section>
+        <div class="angle angle3"></div>
+
+        <!------ WORK SECTION ------>
+        <section class="work" id="work">
+            <div class="wrapper">
+                <h2 class="light">work</h2>
+                <h3>A selection of projects I've been working on:</h3>
+
+                <!--- WORK ONE --->
+                <div class="container-work">
+                    <div class="container-img">
+                        <img src="/assets/icons8-robot-64.png"
+                            alt="devices showing screenshots of Proud Vegan Bot on Twitter.">
+                    </div>
+                    <div class="container-text">
+                        <h4>Proud Vegan Twitter Bot</h4>
+                        <p>A Twitter Bot to celebrate people who choose to live a vegan lifestyle.</p>
+                        <div class="container-icons-mini">
+                            <p>Built in Python using the Tweepy library.</p>
+                        </div> <!-- /.container-icons-mini -->
+                        <div class="container-work-btns">
+                            <a href="https://twitter.com/ProudVeganBot" target="_blank"
+                                aria-label="open link to Proud Vegan Bot on Twitter." class="btn btn-view-work">
+                                <span>view it here</span>
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/Shutt3r/proud-vegan-bot" target="_blank"
+                                aria-label="open link to Proud Vegan Bot GitHub repo." class="btn btn-view-work">
+                                <span>view github repo</span>
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                        </div> <!-- /.container-work-btns -->
+                    </div> <!-- /.container-t-text -->
+                </div> <!-- /.container-work -->
+
+                <!--- WORK TWO --->
+                <div class="container-work">
+                    <div class="container-img">
+                        <img src="/assets/farm-simulator.png"
+                            alt="devices showing screenshots of Farm Simulator website.">
+                    </div>
+                    <div class="container-text">
+                        <h4>Farm Simulator</h4>
+                        <p>View the modern farm from the point of view of those who live there.</p>
+                        <div class="container-icons-mini">
+                            <p>Built in HTML, CSS and JS using github pages.</p>
+
+                        </div> <!-- /.container-icons-mini -->
+                        <div class="container-work-btns">
+                            <a href="https://farm-simulator.github.io" target="_blank"
+                                aria-label="open link to Farm Simulator website." class="btn btn-view-work">
+                                <span>view it here</span>
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/Shutt3r/farm-simulator" target="_blank"
+                                aria-label="open link to Farm Simulator GitHub repo." class="btn btn-view-work">
+                                <span>view github repo</span>
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                        </div> <!-- /.container-work-btns -->
+                    </div> <!-- /.container-t-text -->
+                </div> <!-- /.container-work -->
+
+                <!--- WORK TWO --->
+                <div class="container-work">
+                    <div class="container-img">
+                        <img src="/assets/the-evolution-of-farming.png"
+                            alt="devices showing screenshots of The Evolution of Farming website.">
+                    </div>
+                    <div class="container-text">
+                        <h4>The Evolution of Farming</h4>
+                        <p>View the progression of farming practices over time.</p>
+                        <div class="container-icons-mini">
+                            <p>Built in HTML, CSS and JS using github pages.</p>
+
+                        </div> <!-- /.container-icons-mini -->
+                        <div class="container-work-btns">
+                            <a href="https://evolution-of-farming.github.io" target="_blank"
+                                aria-label="open link to the eveolution of farming website." class="btn btn-view-work">
+                                <span>view it here</span>
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://github.com/Shutt3r/evolution-of-farming" target="_blank"
+                                aria-label="open link to the evolution of farming GitHub repo."
+                                class="btn btn-view-work">
+                                <span>view github repo</span>
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                        </div> <!-- /.container-work-btns -->
+                    </div> <!-- /.container-t-text -->
+                </div> <!-- /.container-work -->
+
+            </div> <!-- /.wrapper -->
+        </section>
+
+        <div class="angle angle4"></div>
+
+
+        <!------ CONTACT SECTION ------>
+        <section class="contact" id="contact">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <h3>Reach out and make a connection with me <a href="https://twitter.com/Shutt3r__?ref_src=twsrc%5Etfw"
+                        class="twitter-follow-button" data-show-count="false">Follow @Shutt3r__</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </h3>
+
+
+                <div class="container-social">
+                    <p class="bold">Find me on these online spaces: </p>
+                    <div class="container-social-i">
+                        <ul>
+
+                            <!-- TWITTER -->
+                            <li>
+                                <a href="https://twitter.com/Shutt3r__" target="_blank"
+                                    aria-label="open link to Shutt3r's Twitter page."><i class="fab fa-twitter"
+                                        aria-hidden="true"></i><span class="visually-hidden">Twitter</span></a>
+                            </li>
+
+                            <!-- CODEPEN -->
+                            <li>
+                                <a href="https://codepen.io/shutt3r" target="_blank"
+                                    aria-label="open link to shutt3r's CodePen page."><i class="fab fa-codepen"
+                                        aria-hidden="true"></i></i><span class="visually-hidden">CodePen</span></a>
+                            </li>
+
+                            <!-- GITHUB -->
+                            <li>
+                                <a href="https://github.com/shutt3r" target="_blank"
+                                    aria-label="open link to shutt3r's github page."><i class="fab fa-github"
+                                        aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!------ FOOTER ------>
+    <footer>
+        <div class="wrapper">
+            <p>&copy; 2022 - present | Designed & coded by Shutt3r </p>
         </div>
-    </nav>
+    </footer>
 
-    <H1>Hi, I'm Shutt3r</H1>
-    <p>Welcome to my simple page, I hope you learn something, let me know if you do :) </p>
-
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a junior full stack software engineer. </p>
-        <p>My interests include: writing fiction, cooking and baking vegan food, drawing, and reading. </p>
-    </section>
-
-    <section id="interests">
-        <h2>Interests</h2>
-        <p>My interests include:
-        <ul>
-            <li>writing fiction</li>
-            <li>cooking and baking (and eating) vegan food</li>
-            <li>drawing</li>
-            <li>reading</li>
-        </ul>
-    </section>
-
-    <section interests="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Proud Vegan Twitter Bot</li>
-            <li>Farm Simulator</li>
-            <li>Evolution of Farming</li>
-            <li>Blog</li>
-        </ul>
-    </section>
-
-    <section id="socials">
-        <h2>Socials</h2>
-        <a href="https://twitter.com/Shutt3r__?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-            data-show-count="false">Follow @Shutt3r__</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </section>
-
-
-    <a href="#" class="btn btn-secondary btn-sm" role="button" aria-pressed="true">Back to top ^^</a>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -94,7 +265,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
-
 
 
 </html>
