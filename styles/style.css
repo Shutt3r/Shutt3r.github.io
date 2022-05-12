@@ -732,7 +732,7 @@ header {
 }
 
 header:before {
-  content: url("./../assets/film.svg");
+  content: url("./../assets/camera.svg");
   display: block;
   position: absolute;
   top: -65px;
@@ -751,7 +751,7 @@ header:before {
 }
 
 header:after {
-  content: url("./../assets/camera.svg");
+  content: url("./../assets/film.svg");
   display: block;
   z-index: 1;
   height: auto;
@@ -1156,36 +1156,36 @@ section.about .container-img-profile {
   }
 }
 
-section.work {
+section.projects {
   background-color: #e48c5c;
   padding-top: 80px;
   padding-bottom: 1px;
 }
 
 @media (min-width: 700px) {
-  section.work .container-img {
+  section.projects .container-img {
     width: 55%;
     padding-top: 30px;
   }
 }
 
-section.work .container-text .container-work-btns {
+section.projects .container-text .container-projects-btns {
   margin-bottom: 1.5rem;
 }
 
 @media (min-width: 700px) {
-  section.work .container-text {
+  section.projects .container-text {
     width: 45%;
     padding-left: 20px;
   }
 }
 
-section.work .container-work {
+section.projects .container-projects {
   margin-bottom: 4.2rem;
 }
 
 @media (min-width: 700px) {
-  section.work .container-work {
+  section.projects .container-projects {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1202,7 +1202,7 @@ section.work .container-work {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  section.work .container-work:nth-child(odd) .container-text {
+  section.projects .container-projects:nth-child(odd) .container-text {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -1210,7 +1210,7 @@ section.work .container-work {
   }
 }
 
-section.work .container-icons-mini {
+section.projects .container-icons-mini {
   color: #fff;
   margin-bottom: 1rem;
   display: -webkit-box;
@@ -1224,7 +1224,7 @@ section.work .container-icons-mini {
       flex-wrap: nowrap;
 }
 
-section.work .container-icons-mini .box-icon {
+section.projects .container-icons-mini .box-icon {
   margin-right: 8px;
   position: relative;
 }
@@ -1236,17 +1236,6 @@ section.skills-tools {
 
 section.skills-tools p:first-of-type {
   margin-bottom: 50px;
-}
-
-section.skills-tools:after {
-  content: url("./../assets/books.svg");
-  display: block;
-  position: absolute;
-  right: -10px;
-  bottom: 0px;
-  z-index: 1;
-  height: auto;
-  width: 165px;
 }
 
 .container-icons {
