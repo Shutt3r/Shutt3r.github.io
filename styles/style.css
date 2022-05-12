@@ -747,7 +747,7 @@ header:before {
 }
 
 header:after {
-  content: url("./../assets/shutter.svg");
+  content: url("./../assets/camera.svg");
   display: block;
   z-index: 1;
   height: auto;
@@ -1225,7 +1225,7 @@ section.work .container-icons-mini .box-icon {
 }
 
 section.work:after {
-  content: url("./../assets/camera.svg");
+  content: url("./../assets/shutter.svg");
   display: block;
   position: absolute;
   right: -10px;
