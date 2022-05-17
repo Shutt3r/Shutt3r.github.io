@@ -731,34 +731,11 @@ header {
   padding: 100px 0 50px;
 }
 
-header:before {
-  content: url("./../assets/camera.svg");
-  display: block;
-  position: absolute;
-  top: -65px;
-  left: -15px;
-  height: auto;
-  width: 200px;
-  -webkit-transform: rotate(132deg);
-          transform: rotate(132deg);
-}
-
 @media (min-width: 900px) {
   header:before {
     width: 275px;
     top: -140px;
   }
-}
-
-header:after {
-  content: url("./../assets/film.svg");
-  display: block;
-  z-index: 1;
-  height: auto;
-  width: 175px;
-  position: absolute;
-  right: -20px;
-  bottom: -200px;
 }
 
 @media (min-width: 520px) {
